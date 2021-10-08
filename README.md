@@ -23,7 +23,7 @@
 1. destroyed header
 
 ## Project setup
-1. `git clone`
+1. `git clone https://github.com/tzynwang/vue-component-life-cycle.git`
 1. `npm i`
 1. `npm run serve`
 
