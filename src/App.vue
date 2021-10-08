@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <headComponent />
+    <hr>
+    <button @click="destroyComponent">destroyComponent</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import headComponent from './components/headComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    headComponent
+  },
+  methods: {
+    destroyComponent () {
+      this.$destroy()
+    }
   }
 }
 </script>
